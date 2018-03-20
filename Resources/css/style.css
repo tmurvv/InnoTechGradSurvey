@@ -1,3 +1,4 @@
+/**** DEFAULT SETTINGS ****/
 * {
     margin: 0;
     padding: 0;
@@ -8,8 +9,8 @@ html {
     background-color: #fff;
     color: #555;
     font-family: 'Lato', 'Arial', san-serif;
-    font-size: 20px;
     font-weight: 300;
+    font-size: 20px;
     text-rendering: optimizeLegibility;
 }
 
@@ -18,6 +19,78 @@ html {
     margin: 0, auto;
 }
 
-p {
-    background-color: aquamarine
+/**** HEADER ****/
+
+header {
+    background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url(cssImages/grad.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+.hero-text-box {
+    position: absolute;
+    width: 1140px;
+    top: 60%;
+    left: 55%;
+    transform: translate(0, -50%);
+}
+
+h1 {
+    margin: 0;
+    color: #fff;
+}
+
+.h1Format {
+   font-size: 70px;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+
+.logo {
+    margin-left: 50px;
+}
+
+/**** BUTTONS ****/
+
+.btn:link,
+.btn:visited {
+    display: inline-block;
+    padding: 10px 30px;
+    text-decoration: none;
+    border-radius: 200px;
+    border: 1px solid #e68d55;
+    transition: background-color 0.4s, border 0.4s, color 0.4s;
+}
+
+.btn-full:link,
+.btn-full:visited {
+    background-color: #e68d55;
+    color: #fff;
+    margin-right: 40px;
+}
+
+.btn-ghost:link,
+.btn-ghost:visited {
+    border: 1px solid #e68d55;
+    color: #e68d55;
+
+}
+
+.btn:hover,
+.btn:active {
+    background-color: #db8651;
+    border: 1px solid #db8651;
+    color: #fff;
+}
+
+.btn-full:hover,
+.btn-full:active {
+
+}
+
+.btn-ghost:hover,
+.btn-ghost:active {
+
 }
