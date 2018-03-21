@@ -99,9 +99,9 @@ h2:after {
 }
 
 .logo {
-    margin-left: 10px;
-    margin-top: 10px;
+    margin: 5px;
     height: 100px;
+    opacity: .8;
 }
 
 .main-nav {
@@ -190,6 +190,11 @@ input[type="submit"]:active {
     margin: 0 auto;
 }
 
+.ion-alert-circled {
+    color: #e68d55;
+    font-size: 160%;
+}
+
 .question {
     padding: 23px;
     margin-left: -18px;
@@ -217,3 +222,105 @@ input[type=checkbox] {
 input[type=submit] {
     margin-top: 10px
 }
+
+/*About section*/
+
+.section-about {
+    background-color: #ececec;
+    width: 60%;
+    margin: 0 auto;
+
+}
+
+.section-about p {
+    width: 80%;
+    margin: 0 13% ;
+
+}
+
+.section-about a {
+    text-decoration: none;
+    color: #e68d55;
+    font-weight: 400;
+    font-size: 95%;
+    padding-bottom: 2px;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom, color 0.4s;
+}
+
+.section-about a:hover,
+.section-about a:active {
+    color: #db8651;
+    border-bottom: 2px solid #db8651;
+}
+
+/*Footer*/
+
+footer {
+    background-color: #333;
+    padding: 40px;
+    margin-left: 60px
+}
+
+.footer-nav {
+    float: left;
+    margin-left: 100px;
+    text-transform: uppercase;
+}
+
+.social-links {
+    float: right;
+    margin-right: 100px;
+}
+footer ul {
+    list-style: none;
+}
+
+.footer-nav li,
+.social-links li {
+    display: inline-block;
+    margin: 0 20px;
+    font-size: 120%;
+}
+
+.footer-nav li a:link,
+.footer-nav li a:visited,
+.social-links li a:link,
+.social-links li a:visited {
+    text-decoration: none;
+    border: 0;
+    color: #888;
+    transition: color 0.4s;
+}
+
+.footer-nav li a:hover,
+.footer-nav li a:active,
+.social-links li a:hover,
+.social-links li a:active {
+
+    color: #dfdfdf;
+}
+
+.ion-social-linkedin-outline {
+    font-size: 140%;
+}
+
+.ion-social-linkedin-outline:link,
+.ion-social-linkedin-outline:visited {
+    color: inherit;
+    transition: color 0.4s;
+}
+
+.ion-social-linkedin-outline:hover,
+.ion-social-linkedin-outline:active {
+    color: #007bb6;
+}
+
+footer p {
+    margin-top: 30px;
+    color: #888;
+    text-align: center;
+    margin-left: 25%;
+}
+
+
