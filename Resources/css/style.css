@@ -259,7 +259,6 @@ input[type=submit] {
 footer {
     background-color: #333;
     padding: 40px;
-    margin-left: 60px
 }
 
 .footer-nav {
@@ -279,7 +278,7 @@ footer ul {
 .footer-nav li,
 .social-links li {
     display: inline-block;
-    margin: 0 20px;
+    margin: 0px 20px;
     font-size: 120%;
 }
 
@@ -321,6 +320,41 @@ footer p {
     color: #888;
     text-align: center;
     margin-left: 25%;
+}
+
+/*Bouncing spinning grad cap*/
+
+.bounce {
+    position: absolute;
+    top: 50%;
+    left: 55%;
+    margin: 50px 0 0px -60px;
+    animation: bounce .5s;
+    animation-direction: alternate;
+    animation-iteration-count: 2;
+}
+
+.ion-university {
+    color: #e68d55;
+    font-size: 125px;
+}
+
+.spin {
+    -webkit-animation:spin .5s linear 2;
+    -moz-animation:spin .5s linear 2;
+    animation:spin .5s linear 2;
+}
+
+@-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
+@-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
+@keyframes spin { 100% {
+    -webkit-transform: rotate(360deg);
+    transform:rotate(360deg); }
+}
+
+@keyframes bounce {
+    from { transform: translate3d(0,0,0); }
+    to { transform: translate3d(0,-500px,0); }
 }
 
 
