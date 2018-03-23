@@ -1,0 +1,188 @@
+/*Big tablets to 1200px: 1023-1200px*/
+
+@media only screen and (max-width: 1200px) {}
+
+/*Small tablets to big tablets: 768-1023px*/
+
+@media only screen and (max-width: 1150px) {
+    .section-survey {
+
+        width: 80%;
+
+    }
+    .main-nav {
+        margin-right: 50px;
+    }
+}
+
+/*Small phones to small tablets: 781-950px*/
+
+@media only screen and (max-width: 950px) {
+
+
+    .h1Format {
+        font-size: 55px;
+    }
+
+    .main-nav li {
+
+        margin-left: 20px;
+    }
+
+    .main-nav li a:link,
+    .main-nav li a:visited {
+
+        font-size: 75%;
+
+        padding-bottom: 5px;
+        font-weight: 400;
+        letter-spacing: 1px;
+    }
+
+    .section-survey {
+        width: 70%;
+    }
+
+    .section-about .row,
+    .section-about p {
+        margin: 0 3%;
+    }
+}
+
+.bounce {
+    margin-left: 60px;
+}
+
+.footer-nav li,
+.social-links li {
+    margin: 5px;
+    font-size: 95%;
+}
+
+footer p {
+    margin-top: 20px;
+    font-size: 80%;
+}
+
+/*Med: 600-780px*/
+
+@media only screen and (max-width: 780px) {
+
+    .bounce {
+        margin-left: 0px;
+    }
+    .btnCap {
+
+        font-size: 60%;
+    }
+
+    .logo {
+        height: 65px
+    }
+    .hero-text-box {
+        top: 45%;
+        margin-bottom: 40px;
+    }
+    .h1Format {
+        font-size: 40px;
+
+    }
+
+    .btn:link,
+    .btn:visited {
+        font-size: 80%;
+    }
+
+    .main-nav {
+        margin-top: 30px;
+    }
+
+    .main-nav li {
+
+        margin-left: 10px;
+    }
+
+    .main-nav li a:link,
+    .main-nav li a:visited {
+
+        font-size: 60%;
+
+        padding-bottom: 5px;
+        font-weight: 400;
+
+    }
+
+    .footer-nav li {
+        display: inline-block;
+    }
+
+}
+
+/*Small < 600px*/
+
+@media only screen and (max-width: 600px) {
+
+    .logo {
+        height: 70px
+    }
+    .hero-text-box {
+        top: 45%;
+        margin-bottom: 40px;
+    }
+    .h1Format {
+        font-size: 25px;
+
+    }
+
+    .btn:link,
+    .btn:visited,
+    .btnCap {
+        font-size: 100%;
+        display: block;
+        margin-top: 50px;
+        width: 230px;
+
+    }
+
+    .main-nav {
+        margin-top: 20px;
+    }
+
+    .main-nav li {
+
+        margin-left: 7px;
+    }
+
+    .main-nav li a:link,
+    .main-nav li a:visited {
+
+        font-size: 40%;
+        padding-bottom: 5px;
+        font-weight: 400;
+        display: none;
+    }
+
+    .ion-navicon {
+        color: #fff;
+        display: block;
+        font-size: 300%;
+
+    }
+
+    .footer-nav li {
+        display: block;
+    }
+
+    .footer-nav li,
+    .social-links li {
+        margin: 5px;
+        font-size: 75%;
+    }
+
+
+
+    footer p {
+        margin-top: 10px;
+        font-size: 65%;
+    }
+}

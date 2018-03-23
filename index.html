@@ -2,11 +2,15 @@
 
 <html lang="en">
 
-    <head>
+<head>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <link rel="stylesheet" type="text/css" href="Resources/css/style.css">
     <link rel='stylesheet' type="text/css" href="Vendors/css/grid.css">
     <link rel="stylesheet" type="text/css" href="Vendors/css/normalize.css">
     <link rel='stylesheet' type="text/css" href="Vendors/css/ionicons.css">
+    <link rel="stylesheet" type="text/css" href="Resources/css/media.css">
     <link href="https://fonts.googleapis.com/css?family=Lato:100,300,300i,400" rel="stylesheet">
     <script type="text/javascript" src="Resources/js/script.js"></script>
     <title>Inno Grad Survey</title>
@@ -22,18 +26,25 @@
                     <li><a href="#survey">Go to Grad Survey</a></li>
                     <li><a href="#">Throw Your Cap!</a></li>
                     <li><a href="#about">About</a></li>
+                    <li><i class="ion-navicon"></i></li>
                 </ul>
             </div>
         </nav>
         <div class="hero-text-box">
             <h1 class="h1Format">Congratulations<br>Graduate!</h1>
+
+
             <a class="btn btn-full" href="#survey">Go to Grad Survey</a>
-            <button type=button onClick="throwCap();">Throw your cap!</button>
+
+
+            <button type=button class="btnCap" onClick="throwCap();">Throw your cap!</button>
+
             <div id="bounce">
                 <div id="spin">
                     <i id="ion-university"></i>
                 </div>
             </div>
+
         </div>
 
     </header>
@@ -106,7 +117,7 @@
                         </div>
                         <div class="row">
                             <div class="col span-1-of-4">
-                                <label for="addressLine3">City/Province/Postal:</label>
+                                <label for="addressLine3">City Province Postal:</label>
                             </div>
                             <div class="col span-3-of-4">
                                 <input type="text" name="addressLine3" id="addressLine3" placeholder="City/Province/Postal">
@@ -132,12 +143,12 @@
     <section class="section-about" id="about">
         <div class="row">
             <h2>About this form</h2>
-            <p>This form was created by <a href="https://www.linkedin.com/in/tisha-murvihill-tech" target="_blank">Tisha Murvihill</a>, a graduate of <a href="https://www.innotechcollege.com" target=_blank>InnoTech College</a> in Calgary, Alberta, Canada. It is written in HTML5, CSS, and ES6/2015(JavaScript). The submit button is powered by PHP and sends an e-mail to the client with the details of each survey submission. Tisha can be reached at <a href="https://www.take2tech.ca" target="_blank">tech@take2tech.ca</a>.</p><br>
+            <p>This form was created by <a href="https://www.linkedin.com/in/tisha-murvihill-tech" target="_blank">Tisha Murvihill</a>, a graduate of <a href="https://www.innotechcollege.com" target=_blank>InnoTech College</a> in Calgary, Alberta, Canada. It is written in HTML5, CSS, JavaScript, and PHP). The submit button sends an e-mail to the client with the details of each survey submission. Tisha can be reached at <a href="https://www.take2tech.ca" target="_blank">tech@take2tech.ca</a>.</p><br>
         </div>
     </section>
 
     <footer>
-        <div>
+        <div class="row">
             <div>
                 <ul class="footer-nav">
                     <li><a href="#top">Home</a></li>
