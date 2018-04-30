@@ -14,26 +14,25 @@
     $addressline3 = strip_tags(trim($_POST["addressLine3"]));
     $addressline3 = str_replace(array("\r","\n"),array(" "," "),$addressline3);
 
-
+    $employed = strip_tags(trim($_POST["employed"]));
+    $employed = str_replace(array("\r","\n"),array(" "," "),$employed);
+    $whereEmployed = strip_tags(trim($_POST["whereEmployed"]));
+    $whereEmployed = str_replace(array("\r","\n"),array(" "," "),$whereEmployed);
+    $jobAssistance = strip_tags(trim($_POST["jobAssistance"]));
+    $jobAssistance = str_replace(array("\r","\n"),array(" "," "),$jobAssistance);
     // Check the data.
     if (empty($name) OR !filter_var($email, FILTER_VALIDATE_EMAIL)) {
         header("Location: http://www.take2tech.ca/InnoGradSurvey/index.php?success=-1#surveySubmit");
         exit;
     }
 
-    // // // // Check the data.
-    // // // if (empty($name) OR empty($message) OR !filter_var($email, FILTER_VALIDATE_EMAIL)) {
-    // // //     header("Location: http://www.take2tech/InnoGradSurvey/index.php?success=-1#survey");
-    // // //     exit;
-    // // // }
-
     // Set the recipient email address. Update this to YOUR desired email address.
     $recipient = "tmurv@shaw.ca";
 
     // Set the email subject.
-    $subject = "New contact from $name";
+    $subject = "Grad Survey Response from $name";
 
-    // Build the email content.
+    // Build the email content.  
     $email_content = "Contact Info:\n\n";
     $email_content .= "Name: $name\n";
     $email_content .= "Phone: $phone\n";
@@ -41,8 +40,11 @@
     $email_content .= "Address Line 1: $addressline1\n";
     $email_content .= "Address Line 2: $addressline2\n";
     $email_content .= "City/Province/Postal: $addressline3\n\n";
-    // // //$email_content .= "Message:\n$message\n";
-
+    $email_content .= "Employment Info:\n\n";
+    $email_content .= "Are you employed? \n$employed\n\n";
+    $email_content .= "If yes, where? \n$whereEmployed\n\n";
+    $email_content .= "Do you need job placement assistance? \n$jobAssistance\n\n";
+    
     // Build the email headers.
     $email_headers = "From: $name <$email>";
 

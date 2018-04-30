@@ -313,6 +313,9 @@ input[type=submit] {
     color: #fff;
 }
 
+.ion-asterisk {
+    color: rgb(247, 11, 11);
+}
 /*About section*/
 
 .section-about {

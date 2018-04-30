@@ -56,28 +56,29 @@
     <section class="section-survey" id="survey">
         <div class="row">
             <h2>Job Placement Survey</h2>
-            <p>Please fill out this quick survey regarding your current job placement information and let us know if you need any assistance.<br><br><i class="ion-alert-circled"></i> THIS SITE IS UNDER CONSTRUCTION. USE TEST DATA. PLEASE DO NOT ENTER PERSONAL DATA.</p><br>
+            <p>Please fill out this quick survey regarding your current job placement information and let us know if you need any assistance.<br><br>
+            <i class="ion-alert-circled"></i>THIS SITE IS A PROTOTYPE. USE TEST DATA. PLEASE DO NOT ENTER PERSONAL DATA.</p><br>
         </div>
         <div class="row">
             <form method="post" action="emailer.php" class="contact-form">
                 <div class="row">
                    
-                    <!-- <p class="question">1. Are you employed full-time or part-time?</p>
+                    <p class="question">1. Are you employed full-time or part-time?</p>
                     <div>
-                        <input type="checkbox" name="employed" value="Full-time">Full-time<br>
-                        <input type="checkbox" name="employed" value="Part-time">Part-time<br>
-                        <input type="checkbox" name="employed" value="Unemployed">Unemployed
+                        <input type="radio" name="employed" value="Full-time">Full-time<br>
+                        <input type="radio" name="employed" value="Part-time">Part-time<br>
+                        <input type="radio" name="employed" value="Unemployed">Unemployed
                     </div>
 
                     <p class="question">2. If you are employed, who and where is it?</p>
-                    <textarea></textarea>
+                    <textarea name="whereEmployed"></textarea>
                     <p class="question">3. Do you require any assistance in Job Placement?</p>
-                    <textarea></textarea>
-                    <br> -->
+                    <textarea name="jobAssistance"></textarea>
+                    <br>
                     <p class="question">4. Please fill out your most current contact info:</p>
                     <div class="row">
                         <div class="col span-1-of-4">
-                            <label for="name">Name:</label>
+                            <label for="name">Name:<ion-asterisk></label>
                         </div>
                         <div class="col span-3-of-4">
                             <input type="text" name="name" id="name" placeholder="Your name" required>
@@ -88,12 +89,12 @@
                             <label for="phone">Phone #:</label>
                         </div>
                         <div class="col span-3-of-4">
-                            <input type="text" name="phone" id="phone" placeholder="Your phone number" required>
+                            <input type="text" name="phone" id="phone" placeholder="Your phone number">
                         </div>
                     </div>
                     <div class="row">
                         <div class="col span-1-of-4">
-                            <label for="email">Email:</label>
+                            <label for="email">Email:<ion-asterisk></label>
                         </div>
                         <div class="col span-3-of-4">
                             <input type="email" name="email" id="email" placeholder="Your email" required>
@@ -146,13 +147,6 @@
                                     }                               
                                 ?>
                             </div>
-                            <!-- <div class="col span-2-fo-4">
-                                <div class="messageToUser messageToUser--success">Success! Your form has been submitted.</div>
-                                    
-
-                                   <div class="messageToUser messageToUser--fail"><i class="ion-alert-circled"></i>Oops... something went wrong.</div>
-                                                                
-                            </div> -->
                         </div> 
                     </div>
 
@@ -181,8 +175,8 @@
             </div>
             <div>
                 <ul class="social-links">
-                    <li><a href="https://www.linkedin.com/in/tisha-murvihill-tech" target="_blank"><i class="ion-social-linkedin-outline"></i></a></li>
-                    <li><a href="https://www.take2tech.ca" target="_blank">www.take2tech.ca</a></li>
+                    <li><a href="http://www.linkedin.com/in/tisha-murvihill-tech" target="_blank"><i class="ion-social-linkedin-outline"></i></a></li>
+                    <li><a href="http://www.take2tech.ca" target="_blank">www.take2tech.ca</a></li>
                 </ul>
             </div>
         </div>
