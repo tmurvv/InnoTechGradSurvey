@@ -34,8 +34,8 @@
     $subject = "New contact from $name";
 
     // Build the email content.
-    $email_content = "Contact Info:\n\n"
-    $email_content .= "Name: $name\n";
+    // $email_content = "Contact Info:\n\n"
+    $email_content = "Name: $name\n";
     // // $email_content .= "Phone: $phone\n";
     // $email_content .= "Email: $email\n\n";
     // // // $email_content .= "Address Line 1: $addressline1\n";
@@ -49,7 +49,7 @@
     // Send the email.
     mail($recipient, $subject, $email_content, $email_headers);
     
-    // // Redirect to the index.html page with success code
-    // header("Location: http://www.take2tech.ca/InnoGradSurvey/index.php?success=1#survey");
+    // Redirect to the index.html page with success code
+    header("Location: http://www.take2tech.ca/InnoGradSurvey/index.php?success=1#survey");
 
 ?>
