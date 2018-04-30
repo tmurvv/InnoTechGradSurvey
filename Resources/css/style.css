@@ -293,21 +293,24 @@ input[type=submit] {
     margin-top: 10px
 }
 
-.messageToUserSuccess p {
-    
-    background-color: #56bf56;
-    color: #333;
-    padding: 8px;
+.messageToUser {
+    padding: 10px 20px;
     font-weight: 300;
+    margin-top: 10px;
+    border-radius: 15px;
+    color: #333;
 }
 
-.messageToUserFail p {
-    
-    background-color: rgb(255, 59, 59);
-    color: #333;
-    padding: 8px;
-    font-weight: 400;   
-    display: none;
+.messageToUser--success {    
+    background-color: #56bf56;  
+}
+
+.messageToUser--fail {
+    background-color: rgb(247, 11, 11);
+}
+
+.messageToUser--fail i {
+    color: #fff;
 }
 
 /*About section*/

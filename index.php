@@ -5,13 +5,14 @@
 <head>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <link rel="stylesheet" type="text/css" href="Resources/css/style.css">
+   
     <link rel="stylesheet" type="text/css" href="Vendors/css/grid.css">
     <link rel="stylesheet" type="text/css" href="Vendors/css/normalize.css">
     <link rel="stylesheet" type="text/css" href="Vendors/css/ionicons.css">
     <link rel="stylesheet" type="text/css" href="Resources/css/media.css">
+    <link rel="stylesheet" type="text/css" href="Resources/css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Lato:100,300,300i,400" rel="stylesheet">
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="Resources/js/script.js"></script>
 
@@ -82,14 +83,14 @@
                             <input type="text" name="name" id="name" placeholder="Your name" required>
                         </div>
                     </div>
-                    <!-- <div class="row">
+                    <div class="row">
                         <div class="col span-1-of-4">
                             <label for="phone">Phone #:</label>
                         </div>
                         <div class="col span-3-of-4">
                             <input type="text" name="phone" id="phone" placeholder="Your phone number" required>
                         </div>
-                    </div> -->
+                    </div>
                     <div class="row">
                         <div class="col span-1-of-4">
                             <label for="email">Email:</label>
@@ -98,7 +99,7 @@
                             <input type="email" name="email" id="email" placeholder="Your email" required>
                         </div>
                     </div>
-                        <!-- <div class="row">
+                        <div class="row">
                             <div class="col span-1-of-4">
                                 <label>Address:</label>
                             </div>
@@ -126,23 +127,32 @@
                             <div class="col span-3-of-4">
                                 <input type="text" name="addressLine3" id="addressLine3" placeholder="City/Province/Postal">
                             </div>
-                        </div> -->
+                        </div>
                         <div class="row">
                             <div class="col span-1-of-4">
                                 <label>&nbsp;</label>
                             </div>
                             <div class="col span-1-of-4">
-                                <input type="submit" class = "btnSubmit" value="Submit">
+                                <input type="submit" class = "btnSubmit" value="Submit" id="surveySubmit">
                             </div>
+                            <div class="col span-2-fo-4">
+                                <?php
+                                    if($_GET["success"] == 1) {
+                                        echo "<div class=\"messageToUser messageToUser--success\">Success! Your form has been submitted.</div>";
+                                    }
 
-                            <?php
-                            // if($_GET["success"] == 1) {
-                            //     //echo "<div>\"Your form has been submitted.\"</div>";
-                            // }
-                                
-                                // <div class="col span-2-of-4 messageToUserFail">
-                                // <p>There was a problem submitting your form. Please try again.</p></div>
-                            ?>
+                                    if($_GET["success"] == -1) {
+                                        echo "<div class=\"messageToUser messageToUser--fail\"><i class=\"ion-alert-circled\"></i>Oops... something went wrong.</div>";
+                                    }                               
+                                ?>
+                            </div>
+                            <!-- <div class="col span-2-fo-4">
+                                <div class="messageToUser messageToUser--success">Success! Your form has been submitted.</div>
+                                    
+
+                                   <div class="messageToUser messageToUser--fail"><i class="ion-alert-circled"></i>Oops... something went wrong.</div>
+                                                                
+                            </div> -->
                         </div> 
                     </div>
 
