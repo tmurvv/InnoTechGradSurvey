@@ -4,26 +4,17 @@
 
 /*Small tablets to big tablets: 768-1023px*/
 
-@media only screen and (max-width: 1150px) {
+@media only screen and (max-width: 1024px) {
+    .h1Format {
+        font-size: 65px;
+    }
+
     .section-survey {
-
         width: 80%;
-
     }
     .main-nav {
         margin-right: 50px;
     }
-}
-
-/*Small phones to small tablets: 781-950px*/
-
-@media only screen and (max-width: 950px) {
-
-
-    .h1Format {
-        font-size: 55px;
-    }
-
     .main-nav li {
 
         margin-left: 20px;
@@ -33,10 +24,77 @@
     .main-nav li a:visited {
 
         font-size: 75%;
-
         padding-bottom: 5px;
-        font-weight: 400;
+        font-weight: 300;
         letter-spacing: 1px;
+    }
+
+
+    .footer-nav li,
+    .social-links li {
+        font-size: 80%;
+        margin: 0 5px;
+    }
+
+    footer p {
+        font-size: 80%;
+    }
+}
+
+/*Small phones to small tablets: 481-768px*/
+
+@media only screen and (max-width: 768px) {
+
+    .h1Format {
+        font-size: 38px;
+    }
+
+    .logo {
+        height: 50px;
+        margin: 25px 0;
+    }
+    .hero-text-box {
+        top: 55%;
+        margin-bottom: 40px;
+    }
+
+    .btn:link,
+    .btn:visited,
+    .btnCap {
+        font-size: 80%;
+        margin-top: 40px;
+        width: 160px;
+    }
+
+    .btnCap {
+        font-size: 80%;
+    }
+
+    #bounce {
+        display: block;
+        float: none;
+    }
+
+    .main-nav {
+        display:none;
+        float: left;
+        margin-top: 25px;
+    }
+    .main-nav li {
+
+        display: block;
+        font-size: 100%;
+        
+    }
+    
+    .main-nav li a:link,
+    .main-nav li a:visited {
+        display: block;
+        border: none;
+    }
+
+    .mobile-navicon {
+        display: block;
     }
 
     .section-survey {
@@ -47,127 +105,90 @@
     .section-about p {
         margin: 0 3%;
     }
-}
 
-.bounce {
-    margin-left: 60px;
-}
+    .footer-nav li,
+    .social-links li {
 
-.footer-nav li,
-.social-links li {
-    margin: 5px;
-    font-size: 95%;
-}
-
-footer p {
-    margin-top: 20px;
-    font-size: 80%;
-}
-
-/*Med: 600-780px*/
-
-@media only screen and (max-width: 780px) {
-
-    .bounce {
-        margin-left: 0px;
-    }
-    .btnCap {
-
-        font-size: 60%;
-    }
-
-    .logo {
-        height: 65px
-    }
-    .hero-text-box {
-        top: 45%;
-        margin-bottom: 40px;
-    }
-    .h1Format {
-        font-size: 40px;
-
-    }
-
-    .btn:link,
-    .btn:visited {
         font-size: 80%;
     }
 
-    .main-nav {
-        margin-top: 30px;
-    }
-
-    .main-nav li {
-
-        margin-left: 10px;
-    }
-
-    .main-nav li a:link,
-    .main-nav li a:visited {
-
-        font-size: 60%;
-
-        padding-bottom: 5px;
-        font-weight: 400;
-
+    footer p {
+        margin-top: 20px;
+        font-size: 80%;
     }
 
     .footer-nav li {
         display: inline-block;
     }
 
+    .social-links li {
+        display: block;
+    }
 }
 
-/*Small < 600px*/
 
-@media only screen and (max-width: 600px) {
+/*Small < 480px*/
+
+@media only screen and (max-width: 480px) {
 
     .logo {
-        height: 70px
+        height: 50px;
+        margin: 2px;
     }
+    
+    .main-nav li a:link,
+.main-nav li a:visited {
+   
+    font-size: 65%;   
+    letter-spacing: 1px;
+}
+    
+    .btn {
+        display: block;
+        float: none;
+        margin: 5px;
+    }
+    
+    .btn-main-nav {
+   
+    font-size: 65%;
+    
+    letter-spacing: 1px;
+    
+}
+    .ion-close {font-size: 65%;}
+
     .hero-text-box {
-        top: 45%;
-        margin-bottom: 40px;
+        top: 50%;
+        margin-bottom: 20px;
     }
+
     .h1Format {
         font-size: 25px;
-
+        margin-bottom: 50px;
     }
 
     .btn:link,
     .btn:visited,
     .btnCap {
         font-size: 100%;
+        padding: 5px;
         display: block;
-        margin-top: 50px;
-        width: 230px;
-
+        float: none;
+        margin: 0 0;
+        width: 180px;
     }
 
-    .main-nav {
-        margin-top: 20px;
+    .btnCap {
+        margin-top: 15px;
     }
 
-    .main-nav li {
-
-        margin-left: 7px;
-    }
-
-    .main-nav li a:link,
-    .main-nav li a:visited {
-
-        font-size: 40%;
-        padding-bottom: 5px;
-        font-weight: 400;
-        display: none;
-    }
-
-    .ion-navicon {
-        color: #fff;
+    #bounce {
         display: block;
-        font-size: 300%;
-
+        float: none;
     }
+
+
 
     .footer-nav li {
         display: block;

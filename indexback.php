@@ -7,12 +7,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" type="text/css" href="Resources/css/style.css">
-    <link rel='stylesheet' type="text/css" href="Vendors/css/grid.css">
+    <link rel="stylesheet" type="text/css" href="Vendors/css/grid.css">
     <link rel="stylesheet" type="text/css" href="Vendors/css/normalize.css">
-    <link rel='stylesheet' type="text/css" href="Vendors/css/ionicons.css">
+    <link rel="stylesheet" type="text/css" href="Vendors/css/ionicons.css">
     <link rel="stylesheet" type="text/css" href="Resources/css/media.css">
     <link href="https://fonts.googleapis.com/css?family=Lato:100,300,300i,400" rel="stylesheet">
-    <script type="text/javascript" src="Resources/js/script.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="Resources/js/script.js"></script>
+
     <title>Inno Grad Survey</title>
 
 </head>
@@ -33,15 +35,14 @@
         <div class="hero-text-box">
             <h1 class="h1Format">Congratulations<br>Graduate!</h1>
 
+            <div class="row">
+                <a class="col span-1-of-4 btn btn-full" href="#survey">Go to Grad Survey</a>
+                <button type="button" class="col span-1-of-4 btnCap" onclick="throwCap();" id="btnCap">Throw your cap!</button>
 
-            <a class="btn btn-full" href="#survey">Go to Grad Survey</a>
-
-
-            <button type=button class="btnCap" onClick="throwCap();">Throw your cap!</button>
-
-            <div id="bounce">
-                <div id="spin">
-                    <i id="ion-university"></i>
+                <div id="bounce">
+                    <div id="spin">
+                        <i id="ion-university" class="ion-university"></i>
+                    </div>
                 </div>
             </div>
 
@@ -127,9 +128,26 @@
                             <div class="col span-1-of-4">
                                 <label>&nbsp;</label>
                             </div>
-                            <div class="col span-3-of-4">
+                            <div class="col span-1-of-4">
                                 <input type="submit" value="Submit">
                             </div>
+
+                            <?php
+                            if($_GET["success"] == 1) {
+                                echo "<div class=\"col span-2-of-4 messageToUserSuccess\">
+                                    <p>Your form has been submitted.</p>
+                                </div>"
+                            }
+                            
+                            if($_GET["success"] == -1) {
+                                echo "<div class=\"col span-2-of-4 messageToUserFail\">
+                                    <p>There was a problem submitting your form. Please try again.</p>
+                                </div>"
+                            }
+                                
+                                
+                            ?>
+
                         </div>
                     </div>
 
@@ -143,7 +161,7 @@
     <section class="section-about" id="about">
         <div class="row">
             <h2>About this form</h2>
-            <p>This form was created by <a href="https://www.linkedin.com/in/tisha-murvihill-tech" target="_blank">Tisha Murvihill</a>, a graduate of <a href="https://www.innotechcollege.com" target=_blank>InnoTech College</a> in Calgary, Alberta, Canada. It is written in HTML5, CSS, JavaScript, and PHP). The submit button sends an e-mail to the client with the details of each survey submission. Tisha can be reached at <a href="https://www.take2tech.ca" target="_blank">tech@take2tech.ca</a>.</p><br>
+            <p>This form was created by <a href="https://www.linkedin.com/in/tisha-murvihill-tech" target="_blank">Tisha Murvihill</a>, a graduate of <a href="https://www.innotechcollege.com" target="_blank">InnoTech College</a> in Calgary, Alberta, Canada. It is written in HTML5, CSS, JavaScript, and PHP. The submit button sends an e-mail to the client with the details of each survey submission. Tisha can be reached at <a href="https://www.take2tech.ca" target="_blank">tech@take2tech.ca</a>.</p><br>
         </div>
     </section>
 
