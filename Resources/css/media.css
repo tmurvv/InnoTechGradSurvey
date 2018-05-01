@@ -25,8 +25,7 @@
         letter-spacing: 1px;
     }
     .btn:link,
-    .btn:visited,
-    input[type="submit"] {
+    .btn:visited {
         width: 30%;
     }
     .footer-nav li,
@@ -39,6 +38,8 @@
     }
 }
 
+/*BreakPoint up to 900px*/
+
 @media only screen and (max-width: 900px) {
     .btn:link,
     .btn:visited, .btnCap {
@@ -46,11 +47,6 @@
         margin-top: 40px;
         width: 40%;
     }
-}
-
-#bounce {
-    display: block;
-    float: none;
 }
 
 /*Small phones to small tablets: 481-768px*/
@@ -74,10 +70,7 @@
         margin-top: 40px;
         width: 42%;
     }
-    #bounce {
-        display: block;
-        float: none;
-    }
+    
     .main-nav {
         display: none;
         float: left;

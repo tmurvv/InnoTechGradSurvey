@@ -165,7 +165,6 @@ h2:after {
 
 .btn:link,
 .btn:visited,
-input[type="submit"],
 .btnCap {
     width: 25%;
     display: inline-block;
@@ -201,6 +200,16 @@ input[type="submit"] {
     display: none;
 }
 
+.btnSubmit {
+    width: 155px;
+    padding: 10px 0;
+    text-decoration: none;
+    border-radius: 200px;
+    border: 1px solid #e68d55;
+    transition: background-color 0.4s, border 0.4s, color 0.4s;
+    text-align: center;   
+}
+
 .btn:hover,
 .btn:active,
 input[type="submit"]:hover,
@@ -224,6 +233,10 @@ input[type="submit"]:active,
 #bounce {
     margin-left: 10%;
     margin-top: 4%;
+}
+
+#spin {
+    display: inline-block;
 }
 
 /*Initialize JS settings*/
