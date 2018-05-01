@@ -56,10 +56,10 @@ header {
 
 .hero-text-box {
     position: absolute;
-    width: 1140px;
-    top: 55%;
-    left: 14%;
-    transform: translate(0, -50%);
+    width: 70%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 h1,
@@ -113,9 +113,12 @@ h2:after {
     margin-top: 60px;
 }
 
-.main-nav li {
+.main-nav--item {
     display: inline-block;
-    margin-left: 40px;
+}
+
+.main-nav li:not(:last-child) {
+    margin-right: 25px;
 }
 
 .main-nav li a:link,
@@ -197,6 +200,10 @@ input[type="submit"] {
     color: #e68d55;
 }
 
+.btnCap--reset {
+    display: none;
+}
+
 .btn:hover,
 .btn:active,
 input[type="submit"]:hover,
@@ -208,29 +215,35 @@ input[type="submit"]:active,
     font-weight: 300;
 }
 
-.btn-full:hover,
-.btn-full:active {
-
-}
-
-.btn-ghost:hover,
-.btn-ghost:active {
-
-}
-
-/*Bouncing spinning grad cap*/
+/**************************
+*Bouncing spinning grad cap
+**************************/
 
 .ion-university {
     color: #e68d55;
     font-size: 100px;
 }
 
-.bounce {
-    
+#bounce {
+    margin-left: 17%;
+    margin-top: -2%;
+}
+
+/*Initialize JS settings*/
+.js--displayToggle {
+    display: inline-block;
+}
+
+.js--displayToggle--reset {
+    display: none;
+}
+
+/*End initialize JS Settings*/
+
+.bounce { 
     animation: bounce .5s;
     animation-direction: alternate;
     animation-iteration-count: 2; 
-    
 }
 
 .spin {

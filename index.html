@@ -26,10 +26,10 @@
             <div class="row">
                 <img src="Resources/Images/logopointerrgba.gif" alt="TechSchool Logo" class="logo">
                 <ul class="main-nav js--main-nav">
-                    <li><a href="#survey">Go to Grad Survey</a></li>
-                    <!--<li><a href="#">Throw Your Cap!</a></li>-->
-                    <li><button type="button" class="btn-main-nav" onclick="throwCap();">Throw your cap!</button></li>
-                    <li><a href="#about">About</a></li>
+                    <li class="main-nav--item"><a href="#survey">Go to Grad Survey</a></li>
+                    <li class="js--throwCap js--displayToggle"><a class="btn-main-nav ">Throw your cap!</a></li>
+                    <li class="js--throwCapReset js--displayToggle--reset"><a class="btn-main-nav">Throw Again?</a></li>
+                    <li class="main-nav--item"><a href="#about">About</a></li>
                     
                 </ul>
                 <a href="#" class="mobile-navicon"><i class="ion-navicon js--nav-icon"></i></a>
@@ -40,10 +40,11 @@
 
             <div class="row">
                 <a class="col span-1-of-5 btn btn-full" href="#survey">Go to Grad Survey</a>
-                <button type="button" class="col span-1-of-5 btnCap" onclick = "throwCap();" id="btnCap">Throw your cap!</button>
+                <a class="col span-1-of-5 btnCap js--throwCap js--displayToggle">Throw your cap!</a>
+                <a class="col span-1-of-5 btnCap js--throwCapReset js--displayToggle--reset">Throw Again?</a>
                 
                 <div class="col span-1-of-5" id="bounce">
-                    <div id="spin">
+                    <div class="capIconContainer" id="spin">
                         <i id="ion-university" class="ion-university"></i>
                     </div>
                 </div>
