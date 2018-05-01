@@ -57,7 +57,7 @@ header {
 .hero-text-box {
     position: absolute;
     width: 70%;
-    top: 50%;
+    top: 60%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
@@ -78,6 +78,7 @@ h1 {
     font-weight: 300;
     text-transform: uppercase;
     letter-spacing: 1.5px;
+    margin-bottom: 20px;
 }
 
 h2 {
@@ -115,9 +116,6 @@ h2:after {
 
 .main-nav--item {
     display: inline-block;
-}
-
-.main-nav li:not(:last-child) {
     margin-right: 25px;
 }
 
@@ -152,8 +150,6 @@ h2:after {
     border-bottom: 2px solid #e68d55;
 }
 
-
-
 .mobile-navicon {
     color: #fff;
     font-size: 300%;
@@ -171,6 +167,7 @@ h2:after {
 .btn:visited,
 input[type="submit"],
 .btnCap {
+    width: 25%;
     display: inline-block;
     padding: 10px 0;
     text-decoration: none;
@@ -225,8 +222,8 @@ input[type="submit"]:active,
 }
 
 #bounce {
-    margin-left: 17%;
-    margin-top: -2%;
+    margin-left: 10%;
+    margin-top: 4%;
 }
 
 /*Initialize JS settings*/
@@ -254,10 +251,17 @@ input[type="submit"]:active,
 
 @-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
 @-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
-@keyframes spin { 100% {
-    -webkit-transform: rotate(360deg);
-    transform:rotate(360deg); }
+@keyframes spin { 100% {transform:rotate(360deg); }}
+
+@-moz-keyframes bounce { 
+    from { transform: translate3d(0,0,0); }
+    to { transform: translate3d(0,-500px,0); } 
 }
+
+@-webkit-keyframes bounce { 
+    from { transform: translate3d(0,0,0); }
+    to { transform: translate3d(0,-500px,0); } 
+} 
 
 @keyframes bounce {
     from { transform: translate3d(0,0,0); }

@@ -8,9 +8,9 @@
    
     <link rel="stylesheet" type="text/css" href="Vendors/css/grid.css">
     <link rel="stylesheet" type="text/css" href="Vendors/css/normalize.css">
-    <link rel="stylesheet" type="text/css" href="Vendors/css/ionicons.css">
-    <link rel="stylesheet" type="text/css" href="Resources/css/media.css">
+    <link rel="stylesheet" type="text/css" href="Vendors/css/ionicons.css">   
     <link rel="stylesheet" type="text/css" href="Resources/css/style.css">
+    <link rel="stylesheet" type="text/css" href="Resources/css/media.css">
     <link href="https://fonts.googleapis.com/css?family=Lato:100,300,300i,400" rel="stylesheet">
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -27,8 +27,8 @@
                 <img src="Resources/Images/logopointerrgba.gif" alt="TechSchool Logo" class="logo">
                 <ul class="main-nav js--main-nav">
                     <li class="main-nav--item"><a href="#survey">Go to Grad Survey</a></li>
-                    <li class="js--throwCap js--displayToggle"><a class="btn-main-nav ">Throw your cap!</a></li>
-                    <li class="js--throwCapReset js--displayToggle--reset"><a class="btn-main-nav">Throw Again?</a></li>
+                    <!-- <li class="js--throwCap js--displayToggle main-nav--item"><a class="btn-main-nav ">Throw your cap!</a></li>
+                    <li class="js--throwCapReset js--displayToggle--reset main-nav--item"><a class="btn-main-nav">Throw Again?</a></li> -->
                     <li class="main-nav--item"><a href="#about">About</a></li>
                     
                 </ul>

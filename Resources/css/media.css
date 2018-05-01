@@ -6,168 +6,160 @@
 
 @media only screen and (max-width: 1024px) {
     .h1Format {
-        font-size: 65px;
+        font-size: 55px;
     }
-
     .section-survey {
         width: 80%;
     }
     .main-nav {
         margin-right: 50px;
     }
-    .main-nav li {
-
+    .main-nav--item:not(:last-child) {
         margin-left: 20px;
     }
-
     .main-nav li a:link,
     .main-nav li a:visited {
-
         font-size: 75%;
         padding-bottom: 5px;
         font-weight: 300;
         letter-spacing: 1px;
     }
-
-
+    .btn:link,
+    .btn:visited,
+    input[type="submit"] {
+        width: 30%;
+    }
     .footer-nav li,
     .social-links li {
         font-size: 80%;
         margin: 0 5px;
     }
-
     footer p {
         font-size: 80%;
     }
+}
+
+@media only screen and (max-width: 900px) {
+    .btn:link,
+    .btn:visited, .btnCap {
+        font-size: 90%;
+        margin-top: 40px;
+        width: 40%;
+    }
+}
+
+#bounce {
+    display: block;
+    float: none;
 }
 
 /*Small phones to small tablets: 481-768px*/
 
 @media only screen and (max-width: 768px) {
-
     .h1Format {
         font-size: 38px;
     }
-
     .logo {
         height: 50px;
-        margin: 25px 0;
+        margin: 10px;
     }
     .hero-text-box {
         top: 55%;
         margin-bottom: 40px;
     }
-
     .btn:link,
     .btn:visited,
     .btnCap {
         font-size: 80%;
         margin-top: 40px;
-        width: 160px;
+        width: 42%;
     }
-
-    .btnCap {
-        font-size: 80%;
-    }
-
     #bounce {
         display: block;
         float: none;
     }
-
     .main-nav {
-        display:none;
+        display: none;
         float: left;
+        margin-left: 30px;
         margin-top: 25px;
     }
     .main-nav li {
-
         display: block;
         font-size: 100%;
-        
     }
-    
+
     .main-nav li a:link,
     .main-nav li a:visited {
         display: block;
         border: none;
     }
-
+    .main-nav--item:not(:last-child) {
+        margin-left: 0;
+    }
     .mobile-navicon {
         display: block;
+        margin-right: 10px;
     }
-
     .section-survey {
         width: 70%;
     }
-
     .section-about .row,
     .section-about p {
         margin: 0 3%;
     }
-
     .footer-nav li,
     .social-links li {
-
         font-size: 80%;
     }
-
     footer p {
         margin-top: 20px;
         font-size: 80%;
     }
-
     .footer-nav li {
         display: inline-block;
     }
-
     .social-links li {
         display: block;
     }
 }
 
-
 /*Small < 480px*/
 
 @media only screen and (max-width: 480px) {
+    header {
+        height: 88vh;
+    }
 
     .logo {
         height: 50px;
         margin: 2px;
     }
-    
     .main-nav li a:link,
-.main-nav li a:visited {
-   
-    font-size: 65%;   
-    letter-spacing: 1px;
-}
-    
+    .main-nav li a:visited {
+        font-size: 65%;
+        letter-spacing: 1px;
+    }
     .btn {
         display: block;
         float: none;
         margin: 5px;
     }
-    
     .btn-main-nav {
-   
-    font-size: 65%;
-    
-    letter-spacing: 1px;
-    
-}
-    .ion-close {font-size: 65%;}
-
+        font-size: 65%;
+        letter-spacing: 1px;
+    }
+    .ion-close {
+        font-size: 65%;
+    }
     .hero-text-box {
         top: 50%;
         margin-bottom: 20px;
     }
-
     .h1Format {
         font-size: 25px;
         margin-bottom: 50px;
     }
-
     .btn:link,
     .btn:visited,
     .btnCap {
@@ -178,30 +170,21 @@
         margin: 0 0;
         width: 180px;
     }
-
     .btnCap {
         margin-top: 15px;
     }
-
     #bounce {
         display: block;
         float: none;
     }
-
-
-
     .footer-nav li {
         display: block;
     }
-
     .footer-nav li,
     .social-links li {
         margin: 5px;
         font-size: 75%;
     }
-
-
-
     footer p {
         margin-top: 10px;
         font-size: 65%;

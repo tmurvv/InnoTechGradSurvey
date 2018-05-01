@@ -45,11 +45,15 @@ $(document).ready(function () {
 
         if (icon.hasClass("ion-navicon")) {
             icon.addClass("ion-close");
+            icon.css("font-size", "70%");
             icon.removeClass("ion-navicon");
+
 
         } else {
             icon.removeClass("ion-close");
             icon.addClass("ion-navicon");
+            icon.css("font-size", "inherit");
+            
         }
     });
 
