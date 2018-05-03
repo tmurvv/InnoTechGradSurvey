@@ -48,7 +48,7 @@ section {
 
 header {
     background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.5)),
-   url(cssImages/gradcropmirror.jpg);
+    url(cssImages/gradcropmirror.jpg);
     background-size: cover;
     background-position: center;
     height: 100vh;
@@ -196,10 +196,6 @@ input[type="submit"] {
     color: #e68d55;
 }
 
-.btnCap--reset {
-    display: none;
-}
-
 .btnSubmit {
     width: 155px;
     padding: 10px 0;
@@ -238,17 +234,6 @@ input[type="submit"]:active,
 #spin {
     display: inline-block;
 }
-
-/*Initialize JS settings*/
-.js--displayToggle {
-    display: inline-block;
-}
-
-.js--displayToggle--reset {
-    display: none;
-}
-
-/*End initialize JS Settings*/
 
 .bounce { 
     animation: bounce .5s;

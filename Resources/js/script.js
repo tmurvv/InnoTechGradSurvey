@@ -1,14 +1,19 @@
-//JavaScript file
+//JavaScript/jQuery file
 
 "use strict";
 
 $(document).ready(function () {
 
+    //Landing Page--Initial class settings for bouncing cap
+    $(".js--displayToggle").css("display", "inline-block");
+    $(".js--displayToggleReset").css("display", "none");
+
+    //Landing Page--Throw Cap Button Push
     $(".js--throwCap").click(function() {
         var bounce = $("#bounce");
         var spin = $("#spin");
         var cap = $(".js--displayToggle");
-        var reset = $(".js--displayToggle--reset");
+        var reset = $(".js--displayToggleReset");
 
         if (!$(bounce).hasClass("bounce")) {
             $(bounce).addClass("bounce");
@@ -21,11 +26,12 @@ $(document).ready(function () {
         $(reset).css("display", "inline-block");
     });
 
+    //Landing Page--Throw Again? Button Push
     $(".js--throwCapReset").click(function () {
         var bounce = $("#bounce");
         var spin = $("#spin");
         var cap = $(".js--displayToggle");
-        var reset = $(".js--displayToggle--reset"); 
+        var reset = $(".js--displayToggleReset"); 
 
         if ($(bounce).hasClass("bounce")) {
             $(bounce).removeClass("bounce");
@@ -38,6 +44,7 @@ $(document).ready(function () {
         $(reset).css("display", "none");  
     });
 
+    //Media Queries--Hamburger Menu and Close Button push
     $(".js--nav-icon").click(function () {
         var nav = $(".js--main-nav");
         var icon = $(".js--nav-icon");
@@ -48,13 +55,10 @@ $(document).ready(function () {
             icon.css("font-size", "70%");
             icon.removeClass("ion-navicon");
 
-
         } else {
             icon.removeClass("ion-close");
             icon.addClass("ion-navicon");
-            icon.css("font-size", "inherit");
-            
+            icon.css("font-size", "inherit");         
         }
     });
-
 });

@@ -40,8 +40,8 @@
 
             <div class="row">
                 <a class="col span-1-of-5 btn btn-full" href="#survey">Go to Grad Survey</a>
-                <a class="col span-1-of-5 btnCap js--throwCap js--displayToggle">Throw your cap!</a>
-                <a class="col span-1-of-5 btnCap js--throwCapReset js--displayToggle--reset">Throw Again?</a>
+                <a class="col span-1-of-5 btn btnCap js--throwCap js--displayToggle">Throw your cap!</a>
+                <a class="col span-1-of-5 btn btnCap js--throwCapReset js--displayToggleReset">Throw Again?</a>
                 
                 <div class="col span-1-of-5" id="bounce">
                     <div class="capIconContainer" id="spin">
@@ -161,7 +161,10 @@
     <section class="section-about" id="about">
         <div class="row">
             <h2>About this form</h2>
-            <p>This form was created by <a href="https://www.linkedin.com/in/tisha-murvihill-tech" target="_blank">Tisha Murvihill</a>, a graduate of <a href="https://www.innotechcollege.com" target="_blank">InnoTech College</a> in Calgary, Alberta, Canada. It is written in HTML5, CSS, JavaScript, and PHP. The submit button sends an e-mail to the client with the details of each survey submission. Tisha can be reached at <a href="https://www.take2tech.ca" target="_blank">tech@take2tech.ca</a>.</p><br>
+            <p>This form was created by <a href="https://www.linkedin.com/in/tisha-murvihill-tech" target="_blank">Tisha Murvihill</a>, 
+            a graduate of <a href="https://www.innotechcollege.com" target="_blank">InnoTech College</a> in Calgary, Alberta, Canada. 
+            It is written in HTML5, CSS, JavaScript, and PHP. The submit button sends an e-mail to the client with the details of each 
+            survey submission. Tisha can be reached at <a href="http://www.take2tech.ca" target="_blank">tech@take2tech.ca</a>.</p><br>
         </div>
     </section>
 
