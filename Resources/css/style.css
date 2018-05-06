@@ -300,6 +300,10 @@ textarea {
     height: 150px;
 }
 
+.submitContainer {
+    display: flex;
+}
+
 input[type=checkbox] {
     margin: 10px 8px 10px 20px;
 }
@@ -322,10 +326,13 @@ input[type=submit] {
 
 .messageToUser--fail {
     background-color: rgb(247, 11, 11);
+    font-size: 82%;
 }
 
 .messageToUser--fail i {
     color: #fff;
+    font-size: 90%;
+    margin-right: 3px;
 }
 
 .ion-asterisk {

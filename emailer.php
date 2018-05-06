@@ -20,14 +20,16 @@
     $whereEmployed = str_replace(array("\r","\n"),array(" "," "),$whereEmployed);
     $jobAssistance = strip_tags(trim($_POST["jobAssistance"]));
     $jobAssistance = str_replace(array("\r","\n"),array(" "," "),$jobAssistance);
+ 
     // Check the data.
     if (empty($name) OR !filter_var($email, FILTER_VALIDATE_EMAIL)) {
-        header("Location: http://www.take2tech.ca/InnoGradSurvey/index.php?success=-1#surveySubmit");
+        header("Location: http://www.take2tech.ca/InnoTech/GradPlacementSurvey/index.php?success=-1#surveySubmit");
         exit;
     }
 
     // Set the recipient email address. Update this to YOUR desired email address.
-    $recipient = "tmurv@shaw.ca";
+    $recipient = "info@innotechcollege.com";
+    $notifytake2tech = "tech@take2tech.ca";   
 
     // Set the email subject.
     $subject = "Grad Survey Response from $name";
@@ -41,17 +43,20 @@
     $email_content .= "Address Line 2: $addressline2\n";
     $email_content .= "City/Province/Postal: $addressline3\n\n";
     $email_content .= "Employment Info:\n\n";
-    $email_content .= "Are you employed? \n$employed\n\n";
-    $email_content .= "If yes, where? \n$whereEmployed\n\n";
-    $email_content .= "Do you need job placement assistance? \n$jobAssistance\n\n";
+    $email_content .= "Are you employed? \n\n$employed\n\n";
+    $email_content .= "If yes, where? \n\n$whereEmployed\n\n";
+    $email_content .= "Do you need job placement assistance? \n\n$jobAssistance\n\n";
+
+    $notify_content = "This is a notification to take2tech.ca. A Grad placement survey has been sent to InnoTech College.";
     
     // Build the email headers.
     $email_headers = "From: $name <$email>";
 
     // Send the email.
-    mail($recipient, $subject, $email_content, $email_headers);
-    
+    //mail($recipient, $subject, $email_content, $email_headers);
+    mail($notifytake2tech, $subject, $email_content, $email_headers); //remove when site goes live
+    mail($notifytake2tech, $subject, $notify_content, $email_headers);
+      
     // Redirect to the index.html page with success code
-    header("Location: http://www.take2tech.ca/InnoGradSurvey/index.php?success=1#surveySubmit");
-
+    header("Location: http://www.take2tech.ca/InnoTech/GradPlacementSurvey/index.php?success=1#surveySubmit");
 ?>

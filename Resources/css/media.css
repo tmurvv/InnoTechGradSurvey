@@ -106,6 +106,12 @@
     .social-links li {
         font-size: 80%;
     }
+
+    .submitContainer {
+        display: block;
+    }
+
+    
     footer p {
         margin-top: 20px;
         font-size: 80%;

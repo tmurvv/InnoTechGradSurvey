@@ -27,10 +27,7 @@
                 <img src="Resources/Images/logopointerrgba.gif" alt="TechSchool Logo" class="logo">
                 <ul class="main-nav js--main-nav">
                     <li class="main-nav--item"><a href="#survey">Go to Grad Survey</a></li>
-                    <!-- <li class="js--throwCap js--displayToggle main-nav--item"><a class="btn-main-nav ">Throw your cap!</a></li>
-                    <li class="js--throwCapReset js--displayToggle--reset main-nav--item"><a class="btn-main-nav">Throw Again?</a></li> -->
-                    <li class="main-nav--item"><a href="#about">About</a></li>
-                    
+                    <li class="main-nav--item"><a href="#about">About</a></li>                   
                 </ul>
                 <a href="#" class="mobile-navicon"><i class="ion-navicon js--nav-icon"></i></a>
             </div>
@@ -49,16 +46,14 @@
                     </div>
                 </div>
             </div>
-
         </div>
-
     </header>
 
     <section class="section-survey" id="survey">
         <div class="row">
             <h2>Job Placement Survey</h2>
             <p>Please fill out this quick survey regarding your current job placement information and let us know if you need any assistance.<br><br>
-            <i class="ion-alert-circled"></i>THIS SITE IS A PROTOTYPE. USE TEST DATA. PLEASE DO NOT ENTER PERSONAL DATA.</p><br>
+            <!-- <i class="ion-alert-circled"></i>THIS SITE IS A PROTOTYPE. USE TEST DATA. PLEASE DO NOT ENTER PERSONAL DATA.</p><br> -->
         </div>
         <div class="row">
             <form method="post" action="emailer.php" class="contact-form">
@@ -130,7 +125,7 @@
                                 <input type="text" name="addressLine3" id="addressLine3" placeholder="City/Province/Postal">
                             </div>
                         </div>
-                        <div class="row">
+                        <div class="row submitContainer">
                             <div class="col span-1-of-4">
                                 <label>&nbsp;</label>
                             </div>
@@ -144,7 +139,8 @@
                                     }
 
                                     if($_GET["success"] == -1) {
-                                        echo "<div class=\"messageToUser messageToUser--fail\"><i class=\"ion-alert-circled\"></i>Oops... something went wrong.</div>";
+                                        echo "<div class=\"messageToUser messageToUser--fail\"><i class=\"ion-alert-circled\"></i>Oops... something went wrong. Form not sent.
+                                        Please double-check your e-mail and try again.</div>";
                                     }                               
                                 ?>
                             </div>
