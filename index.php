@@ -56,7 +56,9 @@
             <!-- <i class="ion-alert-circled"></i>THIS SITE IS A PROTOTYPE. USE TEST DATA. PLEASE DO NOT ENTER PERSONAL DATA.</p><br> -->
         </div>
         <div class="row">
+            <!-- <form method="post" action="emailer.php" class="contact-form"> -->
             <form method="post" action="emailer.php" class="contact-form">
+
                 <div class="row">
                    
                     <p class="question">1. Are you employed full-time or part-time?</p>
