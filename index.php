@@ -24,6 +24,13 @@
     <header>
         <nav>                                  
             <div class="row">
+
+
+
+
+
+
+            
                 <img src="Resources/Images/logopointerrgba.gif" alt="TechSchool Logo" class="logo">
                 <ul class="main-nav js--main-nav">
                     <li class="main-nav--item"><a href="#survey">Go to Grad Survey</a></li>
