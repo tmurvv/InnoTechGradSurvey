@@ -23,13 +23,14 @@
  
     // Check the data.
     if (empty($name) OR !filter_var($email, FILTER_VALIDATE_EMAIL)) {
-        header("Location: http://www.take2tech.ca/InnoTech/GradPlacementSurvey/index.php?success=-1#surveySubmit");
+        header("Location: http://www.take2tech.ca/InnoTech/Surveys/GradPlacement/index.php?success=-1#surveySubmit");
         exit;
     }
 
     // Set the recipient email address. Update this to YOUR desired email address.
     $recipient = "info@innotechcollege.com";
-    $notifytake2tech = "tech@take2tech.ca";   
+    $notifytake2tech = "tech@take2tech.ca";
+    $notifymyshawemail = "tmurv@shaw.ca";   
 
     // Set the email subject.
     $subject = "Grad Survey Response from $name";
@@ -53,10 +54,13 @@
     $email_headers = "From: $name <$email>";
 
     // Send the email.
-    //mail($recipient, $subject, $email_content, $email_headers);
-    mail($notifytake2tech, $subject, $email_content, $email_headers); //remove when site goes live
-    mail($notifytake2tech, $subject, $notify_content, $email_headers);
+    mail($recipient, $subject, $email_content, $email_headers);   
+    mail($notifymyshawemail, $subject, $notify_content, $email_headers);
+
+    //May 9, 2018 tech@take2tech not receiving these email. Suspect a spam filter. Put in "known issues" file
+    //mail($notifytake2tech, $subject, $email_content, $email_headers); //remove when site goes live
+    //mail($notifytake2tech, $subject, $notify_content, $email_headers);
       
     // Redirect to the index.html page with success code
-    header("Location: http://www.take2tech.ca/InnoTech/GradPlacementSurvey/index.php?success=1#surveySubmit");
+    header("Location: http://www.take2tech.ca/InnoTech/Surveys/GradPlacement/index.php?success=1#surveySubmit");
 ?>
