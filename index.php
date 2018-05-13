@@ -107,6 +107,7 @@
 
             $notify_content = "This is a notification to take2tech.ca. A Grad placement survey has been sent to InnoTech College.";
 
+            
             // Build the email headers.
             $email_headers = "From: $name <$email>";
 
